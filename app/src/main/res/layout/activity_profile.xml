@@ -1,0 +1,38 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <EditText
+        android:id="@+id/usertext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:hint="serach User here"
+        app:layout_constraintBottom_toTopOf="@+id/callbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:id="@+id/callbtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/usertext" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Search User Here"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/usertext" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
